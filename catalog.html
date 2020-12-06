@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Bibliobar-Catalog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/b28a5a029a.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body  id="catalog_page">
+	<div class="page-container">
+		<div class="address_account_nav-bar">
+			<span>1111 Fantasy Road, City Ohio 12345 | 555.555.1987</span>
+			<div class="my-account_div">
+				<i class="fas fa-user"></i>
+				<span> My Account </span>
+			</div>
+		</div>
+		<div class="page-content">
+			<nav>
+				<div class="main_nav-bar">
+					<div>
+						<h6> Bibliobar </h6>
+					</div>
+					<ul>
+						<li class="index_class"><a href="index.html"> Home </a></li>
+						<li class="inactive_page"><span> About </span></li>
+						<li class="menu_class"><a href="menu.html"> Menu </a></li>
+						<li class="catalog_class"><a href="catalog.html"> Catalog </a></li>
+						<li class="events_class"><a href="events.html"> Events </a></li>
+						<li class="inactive_page"><span> Reservations </span></li>
+					</ul>
+				</div>
+			</nav>
+			<section id="main_search-area">
+				<header id="search-catalog_title">
+					<h1> Search Catalog </h1>
+				</header>
+				<form id="generic-search_Area-form" method="post" action="submit.html">
+					<div class="generic-search_Area">
+						<input type="text" name="g-s_textbox" id="generic-search_textbox" required aria-required="true"
+						placeholder="Once upon a midnight dreary...">
+						<div id="g-s_submit-button">
+							<input type="submit" value="search">
+						</div>
+					</div>
+				</form>
+				<form id="advanced-search_Area-form" method="post" action="submit.html">
+					<div class="advanced-search_Area">
+					<fieldset class="catalog-text_fieldset">
+						<Legend class="catalog-text_legend"> Advanced Search </legend>
+						<div class="fieldset_content">
+							<div class="a-s_selection-search">
+								<div>
+									<input type="checkbox" name="show-only_checkbox" id="show-only_checkbox">
+									<label for="show-only_checkbox"> Show ONLY Items on Shelf </label>
+								</div>
+								<div class="search-media_checkboxes">
+									<span class="search-media_title">Search Media Format:</span>
+									<input type="checkbox" name="books_checkbox" id="books_checkbox">
+									<label for="books_checkbox"> Books </label>
+									<input type="checkbox" name="cds_checkbox" id="cds_checkbox">
+									<label for="cds_checkbox"> CDs </label>
+									<input type="checkbox" name="dvd_checkbox" id="dvd_checkbox">
+									<label for="dvd_checkbox"> DVDs and Blu-rays </label>
+									<input type="checkbox" name="magazine_checkbox" id="magazine_checkbox">
+									<label for="magazine_checkbox"> Magazines </label>
+								</div>
+								<div>
+									<label for="language"> Language </label>
+									<select name="language" id="language">
+												<option value="Eng">English (default)</option>
+												<option value="Ar">Arabic</option>
+												<option value="Ch">Chinese</option>
+												<option value="Fr">French</option>
+												<option value="He">Hebrew</option>
+												<option value="Hi">Hindi</option>
+												<option value="In">Indonesian</option>
+												<option value="It">Italian</option>
+												<option value="Jp">Japanese</option>
+												<option value="Ko">Korean</option>
+												<option value="Po">Portuguese</option>
+												<option value="Sp">Spanish</option>
+												<option value="Ru">Russian</option>
+												<option value="Vi">Vietnamese</option>
+									</select>
+								</div>
+							</div>
+							<div class="a-s_keyword-search">
+								<label for="title_textbox"> Title </label>
+								<input type="text" name="title_textbox" id="title_textbox" placeholder="The Raven..."><br>
+								<label for="author_textbox"> Author </label>
+								<input type="text" name="author_textbox" id="author_textbox" placeholder="Edgar Allan Poe..."><br>
+								<label for="subject_textbox"> Subject </label>
+								<input type="text" name="subject_textbox" id="subject_textbox" placeholder="Narrative poem..."><br>
+							</div>
+							<div class="a-s_clusive-word-search">
+								<label for="all_textbox"> All These Words </label>
+								<input type="text" name="all_textbox" id="all_textbox" placeholder="nevermore, lore, ominous..."><br>
+								<label for="none_textbox"> None of These Words </label>
+								<input type="text" name="none_textbox" id="none_textbox" placeholder="forever, truth, cheerful..."><br>
+							</div>
+							<div class="a-s_submit-container">
+								<input type="submit" value="search" id="a-s_submit">
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				</form>
+			</section>
+		</div>
+		<div class="static-footer">
+			<p> Something to stay </p>
+		</div>
+		<footer class="my-footer">
+			<div>
+				<p> Powered by Maia </p>
+			</div>
+		</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,1244 @@
+/* Basic page set-up */
+body
+{
+ color: #fff;
+ margin: 0;
+ font-family: 'Raleway', sans-serif;
+}
+.page-container
+{
+  width: 100%;
+}
+.page-content
+{
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+ul
+{
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0.5rem 2rem;
+  padding-inline-start: 0;
+}
+h1, h2, h3, h4, h5, h6
+{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+a
+{
+  text-decoration: none;
+  color: #fff;
+}
+p
+{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+/*----------------------------------Navigation - styling------------------------------------- */
+nav
+{
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.address_account_nav-bar
+{
+  box-sizing: border-box;
+  overflow: hidden;
+  position: static;
+  top: 0;
+  padding: 0.2rem 1rem;
+  width: 100%;
+  background-color: #772546;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_nav-bar
+{
+  width: 100%;
+  padding: 0.2rem 1rem;
+  background-color: #2c1419;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_nav-bar h6
+{
+  font-size: 1.5rem;
+  font-family: 'Berkshire Swash', cursive;
+  color: #772646;
+}
+.main_nav-bar ul
+{
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.inactive_page
+{
+  color: #845e67;
+}
+#index_page ul .index_class a, #catalog_page ul .catalog_class a, #menu_page ul .menu_class a, #events_page ul .events_class a
+{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #e985b6;
+  font-family: 'Berkshire Swash', cursive;
+}
+.main_nav-bar a:hover
+{
+  color: #e985b6;
+}
+.main_nav-bar a:focus
+{
+  color: #e985b6;
+}
+/*----------------------------------footer - styling------------------------------------- */
+.my-footer
+{
+  box-sizing: border-box;
+  overflow: hidden;
+  position: fixed;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  bottom: 0;
+  background-color: #2c1419;
+  color: #fff;
+  text-align: center;
+  border-top: 2px #772546 solid;
+}
+.static-footer
+{
+  overflow: hidden;
+  position:  static;
+  width: 100%;
+  height:4rem;
+  margin-bottom: 2rem;
+  background-color: #2c1419;
+  color: #fff;
+}
+/*----------------------------------Index - styling------------------------------------- */
+#index_page
+{
+  background-image: url("images/repeatable-victorianWallpaper-bkgd.png");
+  background-color: #170d0f;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+/*Index-Header....Image and Name*/
+#header_main-image
+{
+  background-color: #181213;
+}
+#header_main-image img
+{
+  width: 100%;
+}
+/*Name and Logo Title Bar*/
+#name_logo
+{
+  text-align: center;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bibliobar-container_h1-h2
+{
+  display: inline-block;
+  color: white;
+  margin: 0rem 1rem;
+}
+#bibliobar-container_h1-h2 h1
+{
+  text-align: left;
+  font-size: 4.6rem;
+  font-family: 'Berkshire Swash', cursive;
+}
+#bibliobar-container_h1-h2 h2
+{
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #e985b6;
+}
+.logo
+{
+  display: inline-block;
+  width: 7rem;
+  margin: 0.5rem 1rem;
+}
+/*Hours and Location Article...Mostly text*/
+#hours-location
+{
+  width: 40%;
+  margin: 8rem auto;
+  text-align: center;
+  font-weight: lighter;
+}
+#hours-location h2
+{
+  display: inline-block;
+  font-size: 3.5rem;
+  margin: 0 auto 3rem auto;
+  border-bottom: 2px #772546 solid;
+}
+#hours-location p
+{
+  font-size: 1.5rem;
+  margin: 0.5rem auto;
+}
+.hours-location_bold
+{
+  font-weight: bold;
+}
+.hours-location_space-after
+{
+  padding-bottom: 1rem;
+}
+.hours-location_space-after2
+{
+  padding-bottom: 2rem;
+}
+/*Article Setup - Image and Fieldset-Textbox*/
+.index-article-area
+{
+  width: 80%;
+  margin: 3rem auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+}
+/*To reverse the order, Reservations ID is used to assign unique grid space*/
+#reservations
+{
+  grid-template-columns: 0.7fr 1fr;
+}
+/*Article - Image, fade and its container*/
+.article-img
+{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#reservations .article-img
+{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.article_image-container
+{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+/*To create fade-link*/
+.article_fade-color
+{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  border: 2px #dbc45e solid;
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 0;
+  border-radius: 15px;
+  background-color: rgb(25, 13, 14, 0.3);
+  opacity: 0;
+}
+.article_fade-color:hover
+{
+  opacity: 1;
+}
+.article_fade-color:focus
+{
+  opacity: 1;
+}
+/*actual image setup*/
+.article-img img
+{
+  border: 2px #dbc45e solid;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+}
+/*Article Fieldset-Textbox container*/
+.article-text
+{
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#reservations .article-text
+{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+/*The Fieldset styling*/
+.article-text fieldset
+{
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px #dbc45e solid;
+  background-color: rgba(40, 25, 20, 0.8);
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0em;
+  padding-inline-start: 0em;
+  padding-inline-end: 0em;
+  padding-block-end: 0em;
+}
+#new-arrivals .article-text fieldset
+{
+  border-left: 0;
+  margin-left: 4px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#reservations-fieldset
+{
+  border-right: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+#reservations-fieldset i
+{
+ color: #e985b6;
+}
+#reservations-fieldset p
+{
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+/*Fieldset's legend setup with link response*/
+.article-text_legend
+{
+  text-align: center;
+  padding: 0 0.5rem 0.1rem 0.5rem;
+  font-size: 2rem;
+  border-bottom: 2px #772546 solid;
+  color: #dbc45e;
+}
+.article-text_legend a
+{
+  color: #dbc45e;
+}
+.article-text_legend a:hover
+{
+  color: #fff;
+}
+.article-text_legend a:focus
+{
+  color: #fff;
+}
+/*----------------------------------menu - styling------------------------------------- */
+#menu_page
+{
+  background-image: url("images/paper-bkgd.png");
+  background-size: 100%;
+  background-color: #170d0f;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+/*Menu-Header*/
+#menu-header img
+{
+  width: 100%;
+}
+#menu-container
+{
+  color: #2c1419;
+}
+/*Menu-Navigation.....creating links within a page*/
+#menu-navigation
+{
+  margin: 0.75rem auto 10rem auto;
+  width: 70%;
+  border-radius: 15px;
+  border: 2px solid #2c1419;
+  border-bottom-style: none;
+  padding-block-start: 2rem;
+  padding-block-end: 0;
+}
+/*Menu-Navigation - legend*/
+#menu-navigation_legend
+{
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Berkshire Swash', cursive;
+  padding: 0rem 0.5rem;
+  margin: 0.5rem;
+  color: #2c1419;
+  border-bottom: 2px #772546 solid;
+}
+/*Menu-Navigation-creating links cont.*/
+#menu-submenus
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#menu-submenus a
+{
+  padding: 0.25rem;
+  font-size: 2.0rem;
+  color: #2c1419;
+}
+#menu-submenus a:hover
+{
+  color: #772546;
+  border-bottom: 2px #772546 solid;
+}
+/*Actual menu listings - organization of possible food items*/
+.menu-sections
+{
+  width: 90%;
+  margin: 5rem auto 0 auto;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 2px solid #2c1419;
+}
+.menu-sections h5
+{
+  font-size: 1.5rem;
+  color: #2c1419;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+/*Menu-categories' legends*/
+.menu-category-legend
+{
+  color: #2c1419;
+  font-size: 2.0rem;
+  font-family: 'Berkshire Swash', cursive;
+  padding: 0.25rem 0.5rem;
+  margin: 1rem 0.5rem;
+  border-bottom: 2px #772546 solid;
+}
+.menu-category-legend a
+{
+  color: #2c1419;
+}
+.menu-category
+{
+  width: 90%;
+  margin: 0.5rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
+}
+.menu-category h5
+{
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #772546;
+}
+.menu-category p
+{
+  font-size: 0.75rem;
+  color: #2c1419;
+  font-style: italic;
+  padding-left: 1rem;
+}
+.menu-item h4
+{
+  font-size: 1.25rem;
+  color: #772546;
+  padding:0.5rem;
+  margin: 0;
+}
+.menu-item p
+{
+  font-size: 1.0rem;
+  color: #772546;
+  margin-bottom: 1rem;
+}
+/*----------------------------------catalog - styling------------------------------------- */
+#catalog_page
+{
+  background-image: url("images/repeatable-victorianWallpaper-bkgd.png");
+  background-color: #170d0f;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+/*catalog-container*/
+#main_search-area
+{
+  width: 90%;
+  margin: 2.5rem auto 1.5rem auto;
+}
+/*Search Catalog-header*/
+#search-catalog_title
+{
+  width: 100%;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #fff;
+  font-family: 'Berkshire Swash', cursive;
+}
+/*generic-search Area container*/
+.generic-search_Area
+{
+  Width: 90%;
+  margin: 1.5rem auto;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+/*generic-search area's submit button*/
+#g-s_submit-button
+{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#g-s_submit-button input[type="submit"]
+{
+  width: 100%;
+  padding: 0.45rem;
+  background-color: #dbc45e;
+  border: 2px #dbc45e solid;
+  color: #2c1419;
+  border-radius: 0 5px 5px 0;
+}
+#generic-search_textbox
+{
+  width: 800px;
+  height: 1.5rem;
+}
+/*Advanced Search legend for fieldset*/
+.catalog-text_legend
+{
+  color: #dbc45e;
+  padding: 0 0.5rem 0.1rem 0.5rem;
+  font-size: 2rem;
+  border-bottom: 2px #772546 solid;
+  text-align: left;
+}
+/*Advanced Search fieldset*/
+.catalog-text_fieldset
+{
+  color: #fff;
+  box-sizing: content-box;
+  padding: 1rem;
+  padding-block-start: 0em;
+  padding-inline-start: 0em;
+  padding-inline-end: 0em;
+  padding-block-end: 0em;
+  border-radius: 15px;
+  border: 2px #dbc45e solid;
+  background-color: rgba(40, 25, 20, 0.8);
+  text-align:center;
+}
+.fieldset_content
+{
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+}
+/*Advanced Search sections within the fieldset*/
+.a-s_selection-search
+{
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.a-s_keyword-search
+{
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.a-s_clusive-word-search
+{
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+/*Advanced Search submit button for the fieldset*/
+.a-s_submit-container
+{
+  grid-column: 2/3;
+  grid-row: 4/5;
+  width: 150px;
+  margin: 1rem auto;
+}
+#a-s_submit
+{
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #2c1419;
+  border: 2px #dbc45e solid;
+  color: #dbc45e;
+  border-radius: 5px;
+}
+/*Advanced Search selection Labels*/
+.a-s_selection-search label
+{
+  width: 200px;
+}
+.a-s_selection-search div
+{
+  display: inline-block;
+}
+.a-s_selection-search
+{
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+/*Advanced Search keyword and clusive word Labels*/
+.a-s_keyword-search label, .a-s_clusive-word-search label
+{
+  width: 160px;
+  display: inline-block;
+  text-align: right;
+}
+/* Search Input styling*/
+input[type="text"]
+{
+  display: inline-block;
+  border: 2px solid #772646;
+  background-color: #100f0f;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  border-radius: 5px;
+  width: 600px;
+  height: 1rem;
+  color: #f7bada;
+  font-weight: normal;
+}
+#generic-search_textbox
+{
+  background-color: #efede0;
+  color: #772546;
+  margin: 0;
+  border-radius: 5px 0 0 5px;
+}
+#language
+{
+  width: 200px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  border: 2px solid #772646;
+  background-color: #100f0f;
+  color: #f7bada;
+}
+/*----------------------------------event - styling------------------------------------- */
+#events_page
+{
+  background-image: url("images/repeatable-victorianWallpaper-bkgd.png");
+  background-color: #170d0f;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+/*event-container*/
+#event-content_container
+{
+  width: 90%;
+  margin: 1rem auto 1rem auto;
+  display: grid;
+  grid-template-columns: .3fr 1fr;
+}
+/*event-header and its area on grid*/
+#event-calendar_header
+{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 1.7rem;
+  text-align: center;
+  color: white;
+  font-family: 'Berkshire Swash', cursive;
+}
+/*calendar graphic area on grid*/
+#event-graphic_area
+{
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.75fr 1fr;
+}
+/*calendar details area on grid*/
+#event-details_area
+{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 80%;
+  margin: 3rem auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+}
+/*the photograph area of the the event details area*/
+.events-img img
+{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border: 2px #dbc45e solid;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+}
+/*the text area of the the event details area*/
+.event-text
+{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/*fieldset for the text area*/
+.event-text fieldset
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px #dbc45e solid;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0em;
+  padding-inline-start: 0em;
+  padding-inline-end: 0em;
+  padding: 1em;
+  border-right: 0;
+  border-radius: 15px 0 0 15px;
+  background-color: rgba(40, 25, 20, 0.8);
+}
+/*the section of text area with clock icon and time*/
+.event-details_time
+{
+  padding: 1rem 0;
+  color: #fff;
+}
+/*event name*/
+.event h3
+{
+  font-size: 1.5rem;
+  padding: 0.5rem 0 0.5rem 0;
+  font-weight: normal;
+  color: #fff;
+}
+/*list of details for a specific event*/
+.event-list
+{
+  padding: 0 3rem;
+  color: #fff;
+}
+.event-list li
+{
+  list-style-type: disc;
+}
+.event-list p
+{
+  font-size: 1rem;
+  padding: 0.75rem 0.25rem;
+}
+/*Calendar Graphic*/
+#calendar-graphic
+{
+  background-color: #772546;
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  padding-bottom: 1px;
+}
+/*calendar-graphic header "Calendar"*/
+#calendar-graphic h4
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+#calendar-graphic_header
+{
+  color: white;
+  text-align: center;
+}
+/*table used to create the calendar cells"*/
+#calendar-graphic_table
+{
+  background-color: #fff;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+#calendar-graphic table
+{
+  border-collapse: collapse;
+  width: 95%;
+  margin: auto;
+  table-layout: fixed;
+}
+#calendar-graphic td
+{
+  vertical-align: top;
+  box-sizing: border-box;
+  font-size: 0.4rem;
+  border: 1px black solid;
+  padding-bottom: 4px;
+}
+/*calendar date cells for specific dates - needed to create event posts"*/
+.td-container
+{
+  width: 80%;
+  margin: 0 auto;
+}
+.date
+{
+  text-align: right;
+  color: black
+}
+.d-gray
+{
+  color: lightgray;
+}
+.active
+{
+  display: inline-block;
+  background-color: #71c602;
+  font-weight: bold;
+  width: 3px;
+  padding: 0 2px;
+  border-radius: 10px;
+}
+.date-event
+{
+  text-align: center;
+  background-color: red;
+  color: #fff;
+  margin-top: 0.2rem;
+  border-radius: 5px;
+}
+.de-red
+{
+  background-color: #f26350;
+}
+.de-blue
+{
+  background-color: #5272b3;
+}
+.de-purple
+{
+  background-color: #b5529f;
+}
+.de-pink
+{
+  background-color: #f5a7c9;
+}
+.de-gray
+{
+  background-color: #867c89;
+}
+/*calendar-graphic Day headers.... "Mon, Tues, Weds"*/
+#calendar-graphic th
+{
+  font-size: 0.75rem;
+  font-weight: bold;
+  border: 1px black solid;
+  text-align: center;
+  padding: 0.5px 0;
+}
+/*calendar-graphic Event Color Key section"*/
+#calendar-graphic_key
+{
+  border: 2px #772546 solid;
+  background-color: rgba(40, 25, 20, 0.8);;
+  color: white;
+  border-radius: 0 0 15px 15px;
+  padding: 1rem;
+}
+/*calendar-graphic Event Color Key header"*/
+#calendar-graphic_key h4
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.25rem 0;
+}
+/*calendar-graphic Event Color Key details"*/
+#calendar-graphic_list p
+{
+  display: inline-block;
+}
+.calendar-event
+{
+  padding: 0.25rem;
+  font-size: 1rem;
+}
+.calendar-details
+{
+  padding-left: 2rem;
+  font-size: 0.8rem;
+}
+.blue
+{
+  color: #5272b3;
+}
+.pink
+{
+  color: #f5a7c9;
+}
+.purple
+{
+  color: #b5529f;
+}
+.red
+{
+  color: #f26350;
+}
+/*----------------------------------Submit-Response-Styling -----------------------------------*/
+#oops_title h1
+{
+  width: 100%;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #2c1419;
+  font-family: 'Berkshire Swash', cursive;
+}
+#oops_title h2
+{
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #2c1419;
+  font-weight: normal;
+  margin:0.5rem;
+}
+#response-img
+{
+  width: 100%;
+  text-align: center;
+}
+#response-img img
+{
+  width: 30%;
+  margin: 1rem auto;
+}
+@media screen and (min-width: 1720px)
+{
+  /*----------------------------------Index - styling------------------------------------- */
+  /*Name and Logo Title Bar*/
+  #bibliobar-container_h1-h2 h1
+  {
+    font-size: 6rem;
+  }
+  #bibliobar-container_h1-h2 h2
+  {
+    font-size: 2rem;
+  }
+  .logo
+  {
+    width: 8rem;
+  }
+  /*Hours and Location Article...Mostly text*/
+  #hours-location
+  {
+    margin: 12rem auto;
+  }
+  #hours-location h2
+  {
+    font-size: 4.5rem;
+    margin: 0 auto 4rem auto;
+  }
+  #hours-location p
+  {
+    font-size: 2rem;
+    margin: 1rem auto;
+  }
+  .hours-location_space-after
+  {
+    padding-bottom: 1.5rem;
+  }
+  .hours-location_space-after2
+  {
+    padding-bottom: 2.5rem;
+  }
+  /*Article Setup - Image and Fieldset-Textbox*/
+  .index-article-area
+  {
+    margin: 3rem auto;
+    grid-template-columns: 1fr 0.6fr;
+  }
+  /*To create fade-link*/
+  .article_fade-color
+  {
+    margin-bottom: 4px;
+  }
+  /*The Fieldset styling*/
+  .article-text fieldset
+  {
+    height: 22rem;
+  }
+  #new-arrivals .article-text fieldset
+  {
+    margin-left: -2px;
+  }
+  #reservations-fieldset p
+  {
+    margin: 0 1rem;
+  }
+  /*Fieldset's legend setup with link response*/
+  .article-text_legend
+  {
+    padding: 0 1rem 1.5rem 1rem;
+    font-size: 2.5rem;
+  }
+  /*----------------------------------menu - styling - Desktop------------------------------------- */
+  /*Menu-Navigation.....creating links within a page*/
+  #menu-navigation
+  {
+    margin: 2rem auto 15rem auto;
+    padding-block-start: 4rem;
+  }
+  /*Menu-Navigation - legend*/
+  #menu-navigation_legend
+  {
+    font-size: 3.5rem;
+    padding: 0rem 1rem;
+    margin: 1rem;
+  }
+  #menu-submenus a
+  {
+    font-size: 2.5rem;
+  }
+  /*Actual menu listings - organization of possible food items*/
+  .menu-sections
+  {
+    margin: 10rem auto 0 auto;
+    padding: 1.5rem;
+  }
+  .menu-sections h5
+  {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  /*Menu-categories' legends*/
+  .menu-category-legend
+  {
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+    margin: 2rem 1rem;
+  }
+  .menu-category
+  {
+    margin: 1rem auto;
+  }
+  .menu-category h5
+  {
+    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+  }
+  .menu-category p
+  {
+    font-size: 1rem;
+    padding-left: 1.5rem;
+  }
+  .menu-item p
+  {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  /*----------------------------------catalog - styling - Desktop------------------------------------- */
+  /*catalog-container*/
+  #main_search-area
+  {
+    margin: 3.5rem auto 2rem auto;
+  }
+  /*Search Catalog-header*/
+  #search-catalog_title
+  {
+    font-size: 3.5rem;
+  }
+  /*generic-search Area container*/
+  .generic-search_Area
+  {
+    margin: 1rem auto;
+  }
+  /*generic-search area's submit button*/
+  #g-s_submit-button
+  {
+    width: 200px;
+  }
+  #g-s_submit-button input[type="submit"]
+  {
+    padding: 0.75rem;
+    font-size: 1.5rem;
+  }
+  #generic-search_textbox
+  {
+    width: 1000px;
+    height: 2rem;
+  }
+  /*Advanced Search legend for fieldset*/
+  .catalog-text_legend
+  {
+    font-size: 2.5rem;
+  }
+  /*Advanced Search fieldset*/
+  .catalog-text_fieldset
+  {
+    padding: 2rem;
+  }
+  /*Advanced Search submit button for the fieldset*/
+  .a-s_submit-container
+  {
+    width: 200px;
+    margin: 2rem auto;
+  }
+  #a-s_submit
+  {
+    padding: 0.75rem;
+  }
+  /*Advanced Search selection Labels*/
+  .a-s_selection-search label
+  {
+    width: 400px;
+    font-size: 1.5rem;
+  }
+  .a-s_selection-search
+  {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
+  /*Advanced Search keyword and clusive word Labels*/
+  .a-s_keyword-search label, .a-s_clusive-word-search label
+  {
+    width: 300px;
+    font-size: 1.5rem;
+  }
+  /* Search Input styling*/
+  input[type="text"]
+  {
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+    width: 800px;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+  input[type="checkbox"]
+  {
+    width:40px;
+    margin: 0.25rem;
+  }
+  #generic-search_textbox
+  {
+    padding: 0.7rem 0.75rem;
+    font-size: 1.5rem;
+  }
+  #language
+  {
+    width: 225px;
+    font-size: 1.3rem;
+  }
+  /*----------------------------------event - styling - Desktop------------------------------------- */
+  #event-content_container
+  {
+    margin: 4rem auto 3.0rem auto;
+  }
+  #event-calendar_header
+  {
+    font-size: 2.7rem;
+  }
+  #event-details_area
+  {
+    margin: 5rem auto;
+    grid-template-columns: 1fr 0.8fr;
+  }
+  /*fieldset for the text area*/
+  .event-text fieldset
+  {
+    border: 2px #dbc45e solid;
+    padding: 1.5em;
+  }
+  /*the section of text area with clock icon and time*/
+  .event-details_time
+  {
+    padding: 1.5rem 0;
+  }
+  /*event name*/
+  .event h3
+  {
+    font-size: 2.2rem;
+    padding: 1rem 0 1rem 0;
+  }
+  /*list of details for a specific event*/
+  .event-list
+  {
+    padding: 0 4rem;
+  }
+
+  .event-list p
+  {
+    padding: 1rem 0.5rem;
+    font-size: 1.25rem;
+  }
+  /*calendar-graphic header "Calendar"*/
+  #calendar-graphic h4
+  {
+    font-size: 2.0rem;
+    margin: 0.75rem 0;
+  }
+  #calendar-graphic td
+  {
+    font-size: 0.6rem;
+  }
+  .active
+  {
+    width: 5px;
+    padding: 0 4px;
+  }
+  /*calendar-graphic Day headers.... "Mon, Tues, Weds"*/
+  #calendar-graphic th
+  {
+    font-size: 1rem;
+  }
+  /*calendar-graphic Event Color Key header"*/
+  #calendar-graphic_key h4
+  {
+    font-size: 2.0rem;
+  }
+
+  .calendar-event
+  {
+    font-size: 1.25rem;
+  }
+  .calendar-details
+  {
+    font-size: 1.25rem;
+  }
+  /*----------------------------------Submit & Reservations -Response-Styling -----------------------------------*/
+  #oops_title h1
+  {
+    font-size: 4.2rem;
+  }
+  #oops_title h2
+  {
+    font-size: 2rem;
+  }
+  #response-img img
+  {
+    width: 37%;
+    margin: 1rem auto;
+  }
+
+}
