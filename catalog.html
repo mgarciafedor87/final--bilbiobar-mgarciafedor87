@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/b28a5a029a.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
 </head>
 <body  id="catalog_page">
@@ -38,7 +38,7 @@
 				<header id="search-catalog_title">
 					<h1> Search Catalog </h1>
 				</header>
-				<form id="generic-search_Area-form" method="post" action="submit.html">
+				<form id="generic-search_Area-form" action="submit.html">
 					<div class="generic-search_Area">
 						<input type="text" name="g-s_textbox" id="generic-search_textbox" required aria-required="true"
 						placeholder="Once upon a midnight dreary...">
@@ -47,7 +47,7 @@
 						</div>
 					</div>
 				</form>
-				<form id="advanced-search_Area-form" method="post" action="submit.html">
+				<form id="advanced-search_Area-form" action="submit.html">
 					<div class="advanced-search_Area">
 					<fieldset class="catalog-text_fieldset">
 						<Legend class="catalog-text_legend"> Advanced Search </legend>
@@ -59,14 +59,22 @@
 								</div>
 								<div class="search-media_checkboxes">
 									<span class="search-media_title">Search Media Format:</span>
-									<input type="checkbox" name="books_checkbox" id="books_checkbox">
-									<label for="books_checkbox"> Books </label>
-									<input type="checkbox" name="cds_checkbox" id="cds_checkbox">
-									<label for="cds_checkbox"> CDs </label>
-									<input type="checkbox" name="dvd_checkbox" id="dvd_checkbox">
-									<label for="dvd_checkbox"> DVDs and Blu-rays </label>
-									<input type="checkbox" name="magazine_checkbox" id="magazine_checkbox">
-									<label for="magazine_checkbox"> Magazines </label>
+									<label for="books_checkbox">
+										<input type="checkbox" name="books_checkbox" id="books_checkbox">
+										<span> Books </span>
+									</label>
+									<label for="cds_checkbox">
+										<input type="checkbox" name="cds_checkbox" id="cds_checkbox">
+										<span> CDs </span>
+									</label>
+									<label for="dvd_checkbox">
+										<input type="checkbox" name="dvd_checkbox" id="dvd_checkbox">
+										<span> DVDs and Blu-rays </span>
+									</label>
+									<label for="magazine_checkbox">
+										<input type="checkbox" name="magazine_checkbox" id="magazine_checkbox">
+										<span> Magazines </span>
+									</label>
 								</div>
 								<div>
 									<label for="language"> Language </label>

@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Bibliobar-Catalog</title>
+	<title>Bibliobar</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/b28a5a029a.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
 </head>
 <body  id="index_page">
@@ -39,7 +39,7 @@
 					<picture>
 	  				<source srcset="images/booksandwine-1920.png" media="(min-width: 1700px)" />
 	  				<source srcset="images/booksandwine-1522.png" media="(max-width: 1700px)" />
-	  				<img src="images/booksandwine-1522.png" />
+	  				<img src="images/booksandwine-1522.png" alt="Wine in a Library" />
 					</picture>
 					<div id="name_logo">
 						<div class="logo">
@@ -66,40 +66,49 @@
 					<p>info@bibliobar.com</p>
 				</article>
 				<article id="new-arrivals" class="index-article-area">
-					<div class="article-img">
-						<picture class="article_image-container">
-							<source srcset="images/books-950.png" media="(min-width: 1700px)" />
-							<source srcset="images/books-800.png" media="(max-width: 1700px)" />
-							<img src="images/books-800.png" />
-						</picture>
-						<div class="article_fade-color">
+					<a href="https://www.newyorker.com/culture/2020-in-review/the-best-books-we-read-in-2020">
+						<div class="article-img">
+							<picture class="article_image-container">
+								<source srcset="images/books-950.png" media="(min-width: 1700px)" />
+								<source srcset="images/books-800.png" media="(max-width: 1700px)" />
+								<img src="images/books-800.png" alt="Stack of Books"/>
+							</picture>
+							<div class="article_fade-color">
+							</div>
 						</div>
-					</div>
+					</a>
 					<div class="article-text">
 						<fieldset>
 							<Legend class="article-text_legend"> <a href="https://www.newyorker.com/culture/2020-in-review/the-best-books-we-read-in-2020"> New Arrivals </a> </legend>
-							<p>Check out our December Literary Additions</p>
+							<p id="newarrivals-intro">Our library has grown throughout 2020. We have new romances, new adventures, and new mysteries ready for you. Click on "New Arrivals" to browse our latest acquisitions.</p>
 						</fieldset>
 					</div>
 				</article>
 				<article id="reservations" class="index-article-area">
-					<div class="article-img">
+					<a href="reservations.html">
+						<div class="article-img">
 							<picture class="article_image-container">
 								<source srcset="images/readingwine-950.png" media="(min-width: 1700px)" />
 								<source srcset="images/readingwine-800.png" media="(max-width: 1700px)" />
-								<img src="images/readingwine-800.png" />
+								<img src="images/readingwine-800.png" alt="Reading a book by the fire" />
 							</picture>
 							<div class="article_fade-color">
 							</div>
-					</div>
+						</div>
+					</a>
 					<div class="article-text">
 						<fieldset id="reservations-fieldset">
 							<Legend class="article-text_legend"> <a href="reservations.html"> Reservations </a> </legend>
-							<p>Quiet Room</p>
-							<i class="fas fa-circle"></i>
-							<p>Discussion Room</p>
-							<i class="fas fa-circle"></i>
-							<p>Computer</p>
+							<div>
+								<p id="reservation-intro"> Looking for a quiet place to read? Or a room for literary discussion and collaboration? Feel free to reserve some of our available amenities for your convience.
+								<div id="amenities">
+									<span>Quiet Room</span>
+									<i class="fas fa-circle"></i>
+									<span>Discussion Room</span>
+									<i class="fas fa-circle"></i>
+									<span>Computer</span>
+								</div>
+							</div>
 						</fieldset>
 					</div>
 				</article>
